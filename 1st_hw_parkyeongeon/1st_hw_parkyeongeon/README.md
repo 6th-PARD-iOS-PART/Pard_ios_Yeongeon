@@ -9,7 +9,7 @@
 - 전체 화면에 검은 배경 적용 완료
 - ZStack 사용하면 검은 배경 위에 요소들을 올릴 수 있음
 
-![1단계 - 검은 배경](./images/step1.png)
+<img src="./images/step1.png" width="300" />
 
 ---
 
