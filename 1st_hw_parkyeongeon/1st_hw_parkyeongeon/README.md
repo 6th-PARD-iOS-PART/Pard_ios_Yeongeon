@@ -21,7 +21,7 @@
 - Color 적용
 - Size는 frame에 맞게 자동 조절됨.(frame: padding horizontal 10)
 
-![2단계 - 5:4 Circle](./images/step2.png)
+<img src="./images/step2.png" width="300" />
 
 ---
 
@@ -31,7 +31,7 @@
 - 폰트 크기, color 지정
 - 위치 조절 완료
 
-![3단계 - Result 0 표시](./images/step3.png)
+<img src="./images/step3.png" width="300" />
 
 ---
 
@@ -41,7 +41,7 @@
 - 아이콘은 SF Symbols 앱에서 찾을 수 있음
 - 버튼별 색상 및 크기 조절 완료
 
-![4단계 - Circles 내부 Text 및 Icon](./images/step4.png)
+<img src="./images/step4.png" width="300" />
 
 ---
 
