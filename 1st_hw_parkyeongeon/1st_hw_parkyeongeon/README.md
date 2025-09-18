@@ -1,10 +1,3 @@
-//
-//  README.md
-//  1st_hw_parkyeongeon
-//
-//  Created by Taemin KIM on 9/19/25.
-//
-
 # iPhone 계산기 화면 그리기
 
 아래는 단계별 진행 상황과 결과 이미지입니다.
