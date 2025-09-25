@@ -7,18 +7,15 @@ import Foundation
 var fruit = "banana"
 
 //MARK: - if문 답안 작성란
-//if fruit == "apple" {
-//    print("apple")
-//}
-//else if fruit == "banana"{
-//    print("banana")
-//}
-//else if fruit == "cherry"{
-//    print("cherry")
-//}
-
-
-
+if fruit == "apple" {
+    print("apple")
+}
+else if fruit == "banana"{
+    print("banana")
+}
+else if fruit == "cherry"{
+    print("cherry")
+}
 
 
 
@@ -35,15 +32,15 @@ var fruit = "banana"
 //printPositiveNumber(-3) // "The number is not positive." 출력해야 함
 
 //MARK: - guard문 답안 작성란
-//func printPositiveNumber(_ number: Int) {
-//    guard number > 0 else {
-//        print("The number is not positive.")
-//        return
-//    }
-//    print(number)
-//}
-//
-//printPositiveNumber(-3)
+func printPositiveNumber(_ number: Int) {
+    guard number > 0 else {
+        print("The number is not positive.")
+        return
+    }
+    print(number)
+}
+
+printPositiveNumber(-3)
 
 
 
@@ -88,16 +85,16 @@ enum sundayToSaturday: Int {
 
 //MARK: - function overloading 답안 작성란
 
-//func printArea (_ width: Int, _ height: Int) { //1
-//    print(width * height)
-//}
-//
-//func printArea (_ radius: Double) { //2
-//    print(radius * radius * 3.14)
-//}
-//
-//printArea(10, 20) //1번 함수 실행
-//printArea(5.0) //2번 함수 실행
+func printArea (_ width: Int, _ height: Int) { //1
+    print(width * height)
+}
+
+func printArea (_ radius: Double) { //2
+    print(radius * radius * 3.14)
+}
+
+printArea(10, 20) //1번 함수 실행
+printArea(5.0) //2번 함수 실행
 
 
 
@@ -108,42 +105,42 @@ enum sundayToSaturday: Int {
 
 //MARK: - function If문사용 답안 작성란
 
-//func checkLoginStatus (_ status: Bool, _ username: String?){
-//    if status == true {
-//        if username == nil {
-//            print("알 수 없는 사용자")
-//        }
-//        else {
-//            print(username!)
-//        }
-//    }
-//    else if status == false {
-//        print("로그인이 필요합니다.")
-//    }
-//}
+func checkLoginStatus (_ status: Bool, _ username: String?){
+    if status == true {
+        if username == nil {
+            print("알 수 없는 사용자")
+        }
+        else {
+            print(username!)
+        }
+    }
+    else if status == false {
+        print("로그인이 필요합니다.")
+    }
+}
 
-//checkLoginStatus(true, "yeongeon") //yeongeon
-//checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
-//checkLoginStatus(true, nil) // 알 수 없는 사용자
+checkLoginStatus(true, "yeongeon") //yeongeon
+checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
+checkLoginStatus(true, nil) // 알 수 없는 사용자
 //MARK: - function guard문 사용 답안 작성란
 
-//func checkLoginStatus (_ status: Bool, _ username: String?){
-//    guard status == true else{
-//        print("로그인이 필요합니다.")
-//        return
-//    }
-//    guard username != nil else {
-//        print("알 수 없는 사용자")
-//        return
-//    }
-//    print(username!)
-//}
-//
-//checkLoginStatus(true, "yeongeon") //yeongeon
-//checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
-//checkLoginStatus(true, nil) // 알 수 없는 사용자
-//
-//
+func checkLoginStatus2 (_ status: Bool, _ username: String?){
+    guard status == true else{
+        print("로그인이 필요합니다.")
+        return
+    }
+    guard username != nil else {
+        print("알 수 없는 사용자")
+        return
+    }
+    print(username!)
+}
+
+checkLoginStatus2(true, "yeongeon") //yeongeon
+checkLoginStatus2(false, "yeongeon") //로그인이 필요합니다.
+checkLoginStatus2(true, nil) // 알 수 없는 사용자
+
+
 
 
 
@@ -163,23 +160,23 @@ print(firstValue)
 
 //문제 2: if-let을 사용한 옵셔널 바인딩
 //문자열 옵셔널 optionalString에 값이 있을 수도, 없을 수도 있습니다. 값이 있으면 "The string is:"와 함께 값을 출력하세요. 값이 없으면 "The string is nil."을 출력하세요.
-var optionalString: String? = "Hello"
-
-
+var optionalString: String?
 //MARK: - Optional if-let 사용 답안 작성란
 
-
-
-
-
-
-
-
+if let check = optionalString {
+    print("The string is: \(check)")
+}
+else {
+    print("The string is nil.")
+}
 
 
 //MARK: - Optional guard-let 사용 답안 작성란
 
-
+guard let check = optionalString else {
+    fatalError("The string is nil.")
+}
+print("The string is: \(check)")
 
 
 
