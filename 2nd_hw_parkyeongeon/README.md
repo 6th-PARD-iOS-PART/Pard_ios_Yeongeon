@@ -78,7 +78,7 @@
 ### 문자열 옵셔널 optionalString에 값이 있을 수도, 없을 수도 있습니다. 값이 있으면 "The string is:"와 함께 값을 출력하세요. 값이 없으면 "The string is nil."을 출력하세요.
 
 - optionalString에 값이 존재할 때
-<img src="./images/problem8_1.png" width="450" />
+<img src="./images/problem8_1.png" width="500" />
 
 - optionalString에 값이 존재하지 않을 때
-<img src="./images/problem8_2.png" width="450" />
+<img src="./images/problem8_2.png" width="500" />
