@@ -40,3 +40,10 @@
 ### 열거형을 사용해 주중(sunday to saturday)을 나타내세요. 각 요일에는 1부터 7까지의 원시값을 부여합니다.
 
 <img src="./images/problem4.png" width="300" />
+
+---
+
+# [문제4] 함수 오버로딩 (Overloading)
+### printArea라는 함수를 작성해보세요. 이 함수는 사각형의 가로와 세로 길이를 받아 면적을 출력하고, 또 다른 버전의 함수는 원의 반지름을 받아 면적을 출력합니다.
+
+<img src="./images/problem5.png" width="300" />

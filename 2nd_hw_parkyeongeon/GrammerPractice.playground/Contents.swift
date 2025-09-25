@@ -88,9 +88,16 @@ enum sundayToSaturday: Int {
 
 //MARK: - function overloading 답안 작성란
 
+func printArea (_ width: Int, _ height: Int) { //1
+    print(width * height)
+}
 
+func printArea (_ radius: Double) { //2
+    print(radius * radius * 3.14)
+}
 
-
+printArea(10, 20) //1번 함수 실행
+printArea(5.0) //2번 함수 실행
 
 
 
