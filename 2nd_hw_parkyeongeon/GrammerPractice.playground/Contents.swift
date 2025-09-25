@@ -127,27 +127,23 @@ enum sundayToSaturday: Int {
 //checkLoginStatus(true, nil) // 알 수 없는 사용자
 //MARK: - function guard문 사용 답안 작성란
 
-func checkLoginStatus (_ status: Bool, _ username: String?){
-    guard status == true else{
-        print("로그인이 필요합니다.")
-        return
-    }
-    guard username != nil else {
-        print("알 수 없는 사용자")
-        return
-    }
-    print(username!)
-}
-
-checkLoginStatus(true, "yeongeon") //yeongeon
-checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
-checkLoginStatus(true, nil) // 알 수 없는 사용자
-
-
-
-
-
-
+//func checkLoginStatus (_ status: Bool, _ username: String?){
+//    guard status == true else{
+//        print("로그인이 필요합니다.")
+//        return
+//    }
+//    guard username != nil else {
+//        print("알 수 없는 사용자")
+//        return
+//    }
+//    print(username!)
+//}
+//
+//checkLoginStatus(true, "yeongeon") //yeongeon
+//checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
+//checkLoginStatus(true, nil) // 알 수 없는 사용자
+//
+//
 
 
 
@@ -156,14 +152,10 @@ checkLoginStatus(true, nil) // 알 수 없는 사용자
 //문제 1: Nil-coalescing 연산자 ?? 사용하기
 //문자열 배열 names에 이름이 몇 개 들어있습니다. 배열의 첫 번째 요소를 출력하세요. 만약 배열이 비어 있다면 "No name found"를 출력하세요.
 var names: [String] = ["Alice", "Bob", "Charlie"]
-
 //MARK: - Optional Nil-coalescing 사용 답안 작성란
 
-
-
-
-
-
+let firstValue: String = names.first ?? "No name found"
+print(firstValue)
 
 
 
