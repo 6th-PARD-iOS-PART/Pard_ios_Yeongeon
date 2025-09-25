@@ -7,15 +7,15 @@ import Foundation
 var fruit = "banana"
 
 //MARK: - if문 답안 작성란
-if fruit == "apple" {
-    print("apple")
-}
-else if fruit == "banana"{
-    print("banana")
-}
-else if fruit == "cherry"{
-    print("cherry")
-}
+//if fruit == "apple" {
+//    print("apple")
+//}
+//else if fruit == "banana"{
+//    print("banana")
+//}
+//else if fruit == "cherry"{
+//    print("cherry")
+//}
 
 
 
@@ -35,9 +35,15 @@ else if fruit == "cherry"{
 //printPositiveNumber(-3) // "The number is not positive." 출력해야 함
 
 //MARK: - guard문 답안 작성란
+func printPositiveNumber(_ number: Int) {
+    guard number > 0 else {
+        print("The number is not positive.")
+        return
+    }
+    print(number)
+}
 
-
-
+printPositiveNumber(-3)
 
 
 

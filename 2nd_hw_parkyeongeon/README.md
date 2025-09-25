@@ -17,3 +17,12 @@
 <img src="./images/problem1_cherry.png" width="300" />
 
 ---
+
+## [문제1] guard문
+### 함수 printPositiveNumber를 작성하세요. 이 함수는 하나의 정수 인자를 받아, 그 값이 양수일 경우에만 그 값을 출력합니다. 만약 값이 양수가 아니라면, "The number is not positive."를 출력합니다.
+
+- number가 5일 때
+<img src="./images/problem2_po.png" width="300" />
+
+- number가 -3일 때
+<img src="./images/problem2_ne.png" width="300" />
