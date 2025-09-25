@@ -43,7 +43,19 @@
 
 ---
 
-# [문제4] 함수 오버로딩 (Overloading)
+# [문제5] 함수 오버로딩 (Overloading)
 ### printArea라는 함수를 작성해보세요. 이 함수는 사각형의 가로와 세로 길이를 받아 면적을 출력하고, 또 다른 버전의 함수는 원의 반지름을 받아 면적을 출력합니다.
 
 <img src="./images/problem5.png" width="400" />
+
+---
+
+# [문제6] function If문 사용 / guard문 사용
+### 문제: 로그인 상태 확인
+### 함수 checkLoginStatus를 작성해보세요. 이 함수는 로그인 상태를 나타내는 Bool 변수와 사용자 이름을 나타내는 String? 변수를 받습니다. 만약 로그인 상태가 true이면 사용자 이름을 출력하고, false이면 "로그인이 필요합니다."를 출력하세요. 사용자 이름이 nil이라면 "알 수 없는 사용자"를 출력하세요.
+
+- function If문 사용
+<img src="./images/problem6_if.png" width="450" />
+
+- function guard문 사용
+<img src="./images/problem6_guard.png" width="450" />

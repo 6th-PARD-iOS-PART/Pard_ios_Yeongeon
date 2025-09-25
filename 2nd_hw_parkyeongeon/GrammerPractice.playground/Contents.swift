@@ -88,16 +88,16 @@ enum sundayToSaturday: Int {
 
 //MARK: - function overloading 답안 작성란
 
-func printArea (_ width: Int, _ height: Int) { //1
-    print(width * height)
-}
-
-func printArea (_ radius: Double) { //2
-    print(radius * radius * 3.14)
-}
-
-printArea(10, 20) //1번 함수 실행
-printArea(5.0) //2번 함수 실행
+//func printArea (_ width: Int, _ height: Int) { //1
+//    print(width * height)
+//}
+//
+//func printArea (_ radius: Double) { //2
+//    print(radius * radius * 3.14)
+//}
+//
+//printArea(10, 20) //1번 함수 실행
+//printArea(5.0) //2번 함수 실행
 
 
 
@@ -108,19 +108,40 @@ printArea(5.0) //2번 함수 실행
 
 //MARK: - function If문사용 답안 작성란
 
+//func checkLoginStatus (_ status: Bool, _ username: String?){
+//    if status == true {
+//        if username == nil {
+//            print("알 수 없는 사용자")
+//        }
+//        else {
+//            print(username!)
+//        }
+//    }
+//    else if status == false {
+//        print("로그인이 필요합니다.")
+//    }
+//}
 
-
-
-
-
-
-
-
-
-
+//checkLoginStatus(true, "yeongeon") //yeongeon
+//checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
+//checkLoginStatus(true, nil) // 알 수 없는 사용자
 //MARK: - function guard문 사용 답안 작성란
 
+func checkLoginStatus (_ status: Bool, _ username: String?){
+    guard status == true else{
+        print("로그인이 필요합니다.")
+        return
+    }
+    guard username != nil else {
+        print("알 수 없는 사용자")
+        return
+    }
+    print(username!)
+}
 
+checkLoginStatus(true, "yeongeon") //yeongeon
+checkLoginStatus(false, "yeongeon") //로그인이 필요합니다.
+checkLoginStatus(true, nil) // 알 수 없는 사용자
 
 
 
