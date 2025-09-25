@@ -35,15 +35,15 @@ var fruit = "banana"
 //printPositiveNumber(-3) // "The number is not positive." 출력해야 함
 
 //MARK: - guard문 답안 작성란
-func printPositiveNumber(_ number: Int) {
-    guard number > 0 else {
-        print("The number is not positive.")
-        return
-    }
-    print(number)
-}
-
-printPositiveNumber(-3)
+//func printPositiveNumber(_ number: Int) {
+//    guard number > 0 else {
+//        print("The number is not positive.")
+//        return
+//    }
+//    print(number)
+//}
+//
+//printPositiveNumber(-3)
 
 
 
@@ -55,12 +55,11 @@ printPositiveNumber(-3)
 //"책(Book)", "비디오(Video)", "음악(Music)" 등의 미디어 아이템을 나타내는 열거형을 작성하세요. 각 아이템에는 타이틀(title)이라는 연관값을 부여합니다.
 
 //MARK: - enum 연관값 답안 작성란
-
-
-
-
-
-
+enum mediaItem {
+    case Book (title: String)
+    case Video (title: String)
+    case Music (title: String)
+}
 
 //MARK: - enum 원시값
 
