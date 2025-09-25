@@ -67,10 +67,15 @@ enum mediaItem {
 //열거형을 사용해 주중(sunday to saturday)을 나타내세요. 각 요일에는 1부터 7까지의 원시값을 부여합니다.
 
 //MARK: - enum 원시값 답안 작성란
-
-
-
-
+enum sundayToSaturday: Int {
+    case sunday = 1
+    case monday = 2
+    case tuesday = 3
+    case wednesday = 4
+    case thursday = 5
+    case friday = 6
+    case saturday = 7
+}
 
 
 

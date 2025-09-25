@@ -33,3 +33,10 @@
 ### "책(Book)", "비디오(Video)", "음악(Music)" 등의 미디어 아이템을 나타내는 열거형을 작성하세요. 각 아이템에는 타이틀(title)이라는 연관값을 부여합니다.
 
 <img src="./images/problem3.png" width="300" />
+
+---
+
+# [문제4] enum 원시값
+### 열거형을 사용해 주중(sunday to saturday)을 나타내세요. 각 요일에는 1부터 7까지의 원시값을 부여합니다.
+
+<img src="./images/problem4.png" width="300" />
