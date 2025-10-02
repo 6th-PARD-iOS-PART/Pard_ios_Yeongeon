@@ -18,7 +18,14 @@ struct TopView2: View {
                     .frame(width: 31, height: 35)
                 VStack {
                     Text("치아는 뼈일까?")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.system(size: 15.3))
+                        .foregroundColor(.gray)
+                        .padding(.bottom, 3)
                     Text("정답보기")
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .foregroundColor(.blue)
+                        .font(.system(size: 18.4))
                 }
                 Spacer()
                 Image("component2_2")
@@ -26,8 +33,9 @@ struct TopView2: View {
                     .scaledToFit()
                     .frame(width: 7, height: 13)
             }
-            .border(Color.red)
+            .padding(.horizontal, 27)
         }
+        .cornerRadius(20)
         .frame(height: 99)
     }
 }

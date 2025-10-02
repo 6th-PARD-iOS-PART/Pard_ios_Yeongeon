@@ -14,9 +14,11 @@ struct TopView1: View {
                 Image("component1_1")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 21, height: 20)
-                Text("할 일")
-                    .foregroundColor(.gray)
+                    .frame(width: 21, height: 22)
+                Image("component1_6")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 36, height: 18)
                 Image("component1_2")
                     .resizable()
                     .scaledToFit()
@@ -36,12 +38,11 @@ struct TopView1: View {
                 Image("component1_5")
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 8, height: 9)
+                    .frame(width: 8, height: 9, alignment: .top)
                     .padding(.bottom)
             }
                 
         }
-        .border(Color.red)
         .padding(25)
         .frame(height: 50)
     }
