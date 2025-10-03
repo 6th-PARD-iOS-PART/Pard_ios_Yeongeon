@@ -23,10 +23,10 @@ extension MockData {
             MockData(money: "650원", statement: "MY입출금통장", name: "bank4"),
             MockData(money: "2,090원", statement: "KB나라사랑우대통장", name: "bank5"),
             MockData(money: "29원", statement: "보통예금(IBK나라사랑통장)", name: "bank6"),
-            MockData(money: "118원", statement: "토스뱅크외화통장", name: "bank7"),
+            MockData(money: "118원", statement: "토스뱅크외화통장 · 2개", name: "bank7"),
             MockData(money: "0원", statement: "입출금통장", name: "bank8"),
             MockData(money: "1,051원", statement: "보통예금(IBK주거래생활금융통장)", name: "bank9"),
-            MockData(money: "15,257,990원", statement: "투자 모아보기", name: "bank10")
+            MockData(money: "15,257,990원", statement: "투자 모아보기 · 15개", name: "bank10")
         ]
     ]
 }

@@ -11,10 +11,11 @@ struct NextView: View {
     var data: MockData
     
     var body: some View {
-        VStack(){
-            NextViewTop(data: data)
-            NextViewCenter()
-            NextViewList()
+        ScrollView{
+            VStack(){
+                NextTopView(data: data)
+                NextListView()
+            }
         }
     }
 }

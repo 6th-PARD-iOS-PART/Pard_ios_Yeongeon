@@ -25,7 +25,8 @@ struct FirstView: View {
                     }
                     .padding(10)
                 }
-            }.background(Color.black.opacity(0.05))
+            }
+            .background(Color.black.opacity(0.05))
         }
     }
 }

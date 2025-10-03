@@ -43,8 +43,7 @@ struct TopView1: View {
             }
                 
         }
-        .padding(25)
-        .frame(height: 50)
+        .padding(.horizontal, 25)
     }
 }
 

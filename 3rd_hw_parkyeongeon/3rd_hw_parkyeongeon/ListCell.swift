@@ -12,13 +12,46 @@ struct ListCell: View {
     
     var body: some View {
         HStack {
-            Image(data.name)
-                .resizable()
-                .frame(width: 34, height: 34)
-                .padding()
+            if data.name == "bank4" {
+                ZStack{
+                    Image(data.name)
+                        .resizable()
+                        .frame(width: 34, height: 34)
+                        .padding()
+                    Text("Kbank")
+                        .font(.system(size: 6.4))
+                        .foregroundColor(.purple)
+                }
+            }
+            else {
+                Image(data.name)
+                    .resizable()
+                    .frame(width: 34, height: 34)
+                    .padding()
+            }
             VStack(alignment: .leading) {
-                Text(data.money)
-                    .font(.system(size: 18.2))
+                if data.name == "bank7"{
+                    HStack {
+                        Text(data.money)
+                            .font(.system(size: 18.2))
+                        Text("+4.42%")
+                            .font(.system(size: 18.9))
+                            .foregroundColor(.red)
+                    }
+                }
+                else if data.name == "bank10"{
+                    HStack {
+                        Text(data.money)
+                            .font(.system(size: 18.2))
+                        Text("-2.6%")
+                            .font(.system(size: 18.9))
+                            .foregroundColor(.blue)
+                    }
+                }
+                else{
+                    Text(data.money)
+                        .font(.system(size: 18.2))
+                }
                 Text(data.statement)
                     .font(.system(size: 14.3))
                     .foregroundColor(.gray)
@@ -58,7 +91,7 @@ struct ListCell: View {
         data: MockData(
             money: "1,000,000,000원",
             statement: "내 돈",
-            name: "bank1"
+            name: "bank10"
         )
     )
 }

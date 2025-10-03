@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct NextViewTop: View {
+struct NextTopView: View {
     var data: MockData
     var body: some View {
-        VStack{
-            VStack{
+        VStack {
+            VStack {
                 Text("통장관리")
                     .frame(maxWidth: .infinity, alignment: .trailing)
                     .foregroundColor(.black.opacity(0.6))
@@ -112,7 +112,7 @@ struct NextViewTop: View {
 }
 
 #Preview {
-    NextViewTop(
+    NextTopView(
         data: MockData(
             money: "1,000,000,000원",
             statement: "내 돈",

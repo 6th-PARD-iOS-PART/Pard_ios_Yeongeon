@@ -10,10 +10,14 @@ import SwiftUI
 struct CenterView1: View {
     var body: some View {
         HStack {
-            Image("component3")
-                .resizable()
-                .frame(width: 34, height: 34)
-                .padding()
+            ZStack{
+                Image("component3")
+                    .resizable()
+                    .frame(width: 34, height: 34)
+                    .padding()
+                Text("W")
+                    .foregroundColor(.blue)
+            }
             VStack(alignment: .leading) {
                 Text("823,643원")
                     .frame(height: 18.2)

@@ -26,7 +26,7 @@ struct TopView3: View {
                     .frame(width: 7, height: 13)
                 
             }
-            .padding()
+            .padding(.horizontal, 27)
         }
         .cornerRadius(20)
         .frame(height: 65)
