@@ -108,14 +108,42 @@
 
 - ListCell
 <p>
-    <img src="./images/ListCell.png" width="300" />
+    <img src="./images/ListCell.png" width="400" />
     <img src="./images/ListCell_ex.png" width="400" />
 <p>
 
 <p>
-    <img src="./images/ListCell_code1.png" width="300" />
+    <img src="./images/ListCell_code1.png" width="400" />
     <img src="./images/ListCell_code2.png" width="400" />
 <p>
 
 ### RESULT
 <img src="./images/ListView.png" width="300" />
+
+# [4] NextView
+
+#### NextView는 ListCell의 송금 버튼을 누르면 넘어가는 다음 페이지입니다. (FirstView의 destination)
+#### 페이지가 넘어갈 땐 data.money 값도 함께 반영됩니다.
+#### NextTopView()와 NextListView()로 구성된 뷰입니다. 
+
+### CODE
+<img src="./images/NextView_code.png" width="500" />
+
+### RESULT
+- NextView
+<p>
+    <img src="./images/NextView1.png" width="400" />
+    <img src="./images/NextView2.png" width="400" />
+<p>
+
+- NextTopView
+<p>
+    <img src="./images/NextTopView.png" width="400" />
+    <img src="./images/NextTopView_code.png" width="400" />
+<p>
+
+- NextListView
+<p>
+    <img src="./images/NextListView.png" width="400" />
+    <img src="./images/NextListView_code.png" width="400" />
+<p>
