@@ -30,6 +30,7 @@
 
 ### CODE
 <img src="./images/FirstView_code.png" width="500" />
+
 - TopView1() ~ TopView3()
 - ListView()
 - CenterView1() ~ CenterView4()
@@ -37,8 +38,10 @@
 
 ### RESULT
 - Full page
-<img src="./images/FirstView_fullpage1.png" width="300" />
-<img src="./images/FirstView_fullpage2.png" width="300" />
+<p>
+    <img src="./images/FirstView_fullpage1.png" width="300" />
+    <img src="./images/FirstView_fullpage2.png" width="300" />
+<p>
 
 - TopView1
 <p>
