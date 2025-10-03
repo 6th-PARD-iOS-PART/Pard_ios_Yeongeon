@@ -96,6 +96,26 @@
 
 ## [3] LinkView
 
+#### LinkView는 데이터모델의 데이터 수만큼 ListCell을 반복 출력한 뷰 입니다.
+#### 리스트를 사용하지 않았지만, 리스트처럼 보임
+
 ### CODE
+<img src="./images/ListView_code.png" width="500" />
+
+- 데이터 모델
+<img src="./images/DataModel.png" width="500" />
+
+
+- ListCell
+<p>
+    <img src="./images/ListCell.png" width="300" />
+    <img src="./images/ListCell_ex.png" width="400" />
+<p>
+
+<p>
+    <img src="./images/ListCell_code1.png" width="300" />
+    <img src="./images/ListCell_code2.png" width="400" />
+<p>
 
 ### RESULT
+<img src="./images/ListView.png" width="300" />
