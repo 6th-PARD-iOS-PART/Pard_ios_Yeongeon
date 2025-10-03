@@ -46,5 +46,56 @@
 - TopView1
 <p>
     <img src="./images/TopView1.png" width="300" />
-    <img src="./images/TopView1_code.png" width="300" />
+    <img src="./images/TopView1_code.png" width="400" />
 <p>
+
+- TopView2
+<p>
+    <img src="./images/TopView2.png" width="300" />
+    <img src="./images/TopView2_code.png" width="400" />
+<p>
+
+- TopView3
+<p>
+    <img src="./images/TopView3.png" width="300" />
+    <img src="./images/TopView3_code.png" width="400" />
+<p>
+
+- CenterView1
+<p>
+    <img src="./images/CenterView1.png" width="300" />
+    <img src="./images/CenterView1_code.png" width="400" />
+<p>
+
+- CenterView2
+<p>
+    <img src="./images/CenterView2.png" width="300" />
+    <img src="./images/CenterView2_code.png" width="400" />
+<p>
+
+- CenterView3
+<p>
+    <img src="./images/CenterView3.png" width="300" />
+    <img src="./images/CenterView3_code.png" width="400" />
+<p>
+
+- CenterView4
+<p>
+    <img src="./images/CenterView4.png" width="300" />
+    <img src="./images/CenterView4_code.png" width="400" />
+<p>
+
+- BottomView
+<p>
+    <img src="./images/BottomView.png" width="300" />
+    <img src="./images/BottomView_code1.png" width="400" />
+    <img src="./images/BottomView_code2.png" width="400" />
+<p>
+
+---
+
+## [3] LinkView
+
+### CODE
+
+### RESULT
