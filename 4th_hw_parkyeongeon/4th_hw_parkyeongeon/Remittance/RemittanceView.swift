@@ -14,6 +14,7 @@ struct RemittanceView: View {
     var body: some View {
         ScrollView{
             VStack(){
+                Dismiss_button().padding(.leading)
                 RemittanceView_Top(accountData:accountData, moneyData: moneyData)
                 RemittanceView_List()
             }

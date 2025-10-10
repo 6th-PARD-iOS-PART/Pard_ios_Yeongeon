@@ -10,6 +10,7 @@ import SwiftUI
 struct ListCell: View {
     var accountData: AccountData
     var moneyData: MockData
+    @State var showNextView = false
     
     var body: some View {
         HStack {
@@ -75,16 +76,23 @@ struct ListCell: View {
                 .padding()
             }
             else {
-                NavigationLink(destination: RemittanceView(accountData:accountData, moneyData: moneyData)){
-                    ZStack{
-                        Rectangle()
-                            .cornerRadius(5)
-                            .frame(width: 59, height: 36)
-                            .foregroundColor(Color.black.opacity(0.05))
-                        Text("송금")
-                            .foregroundColor(Color.black.opacity(0.5))
-                            .font(.system(size: 13.3))
-                    }
+                ZStack{
+                    Rectangle()
+                        .cornerRadius(5)
+                        .frame(width: 59, height: 36)
+                        .foregroundColor(Color.black.opacity(0.05))
+                    Text("송금")
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .font(.system(size: 13.3))
+                }
+                .onTapGesture {
+                    showNextView = true
+                }
+                .fullScreenCover(isPresented: $showNextView){
+                    RemittanceView(accountData: accountData, moneyData: moneyData)
+                }
+                .transaction { transaction in
+                    transaction.disablesAnimations = true
                 }
                 .frame(width: 59, height: 36)
                 .buttonStyle(.plain)
