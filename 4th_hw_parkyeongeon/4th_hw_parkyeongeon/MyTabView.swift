@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct MyTabView: View {
+    var accountData = AccountData (
+        isMyAccount: true,
+        account_name: "WINGO통장",
+        number: "하나은행157-891652-62107",
+        icon_name: "account1"
+    )
+    
     init() {
         UITabBar.appearance().scrollEdgeAppearance = .init()
         
@@ -22,7 +29,7 @@ struct MyTabView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            TabView1_home()
+            TabView1_home(accountData: accountData)
                 .tabItem {
                     Image(systemName: "house.fill")
                     Text("홈")

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct TabView1_home: View {
+    var accountData: AccountData
     var body: some View {
         NavigationView{
             ScrollView {
@@ -16,7 +17,7 @@ struct TabView1_home: View {
                     VStack(spacing: 10) {
                         TopView2_teeth()
                         TopView3_consumerLottery()
-                        ListView()
+                        ListView(accountData: accountData)
                         CenterView1_moneyPerMonth()
                         CenterView2_creditScore()
                         CenterView3_70000won()
@@ -32,5 +33,12 @@ struct TabView1_home: View {
 }
 
 #Preview {
-    TabView1_home()
+    TabView1_home(
+        accountData: AccountData (
+            isMyAccount: true,
+            account_name: "박영언",
+            number: "농협1234-5678",
+            icon_name: "account1"
+        )
+    )
 }

@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct ListCell: View {
-    var data: MockData
+    var accountData: AccountData
+    var moneyData: MockData
     
     var body: some View {
         HStack {
-            if data.name == "bank4" {
+            if moneyData.name == "bank4" {
                 ZStack{
-                    Image(data.name)
+                    Image(moneyData.name)
                         .resizable()
                         .frame(width: 34, height: 34)
                         .padding()
@@ -24,24 +25,24 @@ struct ListCell: View {
                 }
             }
             else {
-                Image(data.name)
+                Image(moneyData.name)
                     .resizable()
                     .frame(width: 34, height: 34)
                     .padding()
             }
             VStack(alignment: .leading) {
-                if data.name == "bank7"{
+                if moneyData.name == "bank7"{
                     HStack {
-                        Text(data.money)
+                        Text("\(moneyData.money)원")
                             .font(.system(size: 18.2))
                         Text("+4.42%")
                             .font(.system(size: 18.9))
                             .foregroundColor(.red)
                     }
                 }
-                else if data.name == "bank10"{
+                else if moneyData.name == "bank10"{
                     HStack {
-                        Text(data.money)
+                        Text("\(moneyData.money)원")
                             .font(.system(size: 18.2))
                         Text("-2.6%")
                             .font(.system(size: 18.9))
@@ -49,16 +50,16 @@ struct ListCell: View {
                     }
                 }
                 else{
-                    Text(data.money)
+                    Text("\(moneyData.money)원")
                         .font(.system(size: 18.2))
                 }
-                Text(data.statement)
+                Text(moneyData.statement)
                     .font(.system(size: 14.3))
                     .foregroundColor(.gray)
             }
             Spacer()
-            if data.name == "bank3" {
-                NavigationLink(destination: RemittanceView(data: data)){
+            if moneyData.name == "bank3" {
+                NavigationLink(destination: RemittanceView(accountData:accountData, moneyData: moneyData)){
                     ZStack{
                         Rectangle()
                             .cornerRadius(5)
@@ -74,7 +75,7 @@ struct ListCell: View {
                 .padding()
             }
             else {
-                NavigationLink(destination: RemittanceView(data: data)){
+                NavigationLink(destination: RemittanceView(accountData:accountData, moneyData: moneyData)){
                     ZStack{
                         Rectangle()
                             .cornerRadius(5)
@@ -96,10 +97,16 @@ struct ListCell: View {
 
 #Preview {
     ListCell(
-        data: MockData(
-            money: "1,000,000,000원",
+        accountData: AccountData (
+            isMyAccount: true,
+            account_name: "박영언",
+            number: "농협1234-5678",
+            icon_name: "account1"
+        ),
+        moneyData: MockData (
+            money: "1,000",
             statement: "내 돈",
-            name: "bank10"
+            name: "bank1"
         )
     )
 }

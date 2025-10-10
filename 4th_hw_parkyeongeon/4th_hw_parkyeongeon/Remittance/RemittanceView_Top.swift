@@ -8,7 +8,10 @@
 import SwiftUI
 
 struct RemittanceView_Top: View {
-    var data: MockData
+    var accountData: AccountData
+    var moneyData: MockData
+    @State var showNextView = false
+    
     var body: some View {
         VStack {
             VStack {
@@ -44,7 +47,7 @@ struct RemittanceView_Top: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .foregroundColor(.gray.opacity(0.9))
                     HStack{
-                        Text(data.money)
+                        Text("\(moneyData.money)원")
                             .bold()
                             .font(.system(size: 30))
                             .foregroundColor(.black.opacity(0.7))
@@ -82,6 +85,15 @@ struct RemittanceView_Top: View {
                             Text("보내기")
                                 .foregroundColor(.white)
                         }
+                        .onTapGesture {
+                            showNextView = true
+                        }
+                        .fullScreenCover(isPresented: $showNextView){
+                            WhereToSendMoney(accountData: accountData, moneyData: moneyData)
+                        }
+                        .transaction { transaction in
+                            transaction.disablesAnimations = true
+                        }
                     }
                     HStack{
                         Image("lighting")
@@ -113,8 +125,14 @@ struct RemittanceView_Top: View {
 
 #Preview {
     RemittanceView_Top(
-        data: MockData(
-            money: "1,000,000,000원",
+        accountData: AccountData (
+            isMyAccount: true,
+            account_name: "박영언",
+            number: "농협1234-5678",
+            icon_name: "account1"
+        ),
+        moneyData: MockData (
+            money: "1,000",
             statement: "내 돈",
             name: "bank1"
         )

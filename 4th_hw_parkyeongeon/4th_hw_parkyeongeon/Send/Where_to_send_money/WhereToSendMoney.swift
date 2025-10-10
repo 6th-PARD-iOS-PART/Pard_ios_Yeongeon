@@ -1,28 +1,31 @@
 //
-//  NextView.swift
-//  3rd_hw_parkyeongeon
+//  WhereToSendMoney.swift
+//  4th_hw_parkyeongeon
 //
-//  Created by Taemin KIM on 10/2/25.
+//  Created by Taemin KIM on 10/10/25.
 //
 
 import SwiftUI
 
-struct RemittanceView: View {
+struct WhereToSendMoney: View {
     var accountData: AccountData
     var moneyData: MockData
     
     var body: some View {
         ScrollView{
-            VStack(){
-                RemittanceView_Top(accountData:accountData, moneyData: moneyData)
-                RemittanceView_List()
+            VStack{
+                Dismiss_button()
+                EnterAccountNumber()
+                MyAccount(moneyData: moneyData)
+                LatestAccount(moneyData: moneyData)
             }
+            .padding(20)
         }
     }
 }
 
 #Preview {
-    RemittanceView(
+    WhereToSendMoney(
         accountData: AccountData (
             isMyAccount: true,
             account_name: "박영언",
