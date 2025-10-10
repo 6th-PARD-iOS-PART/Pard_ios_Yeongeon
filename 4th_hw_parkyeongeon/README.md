@@ -10,12 +10,12 @@
 
 ### Before
 <p>
-    <img src="./images/before_folder.png" width="400" />
+    <img src="./images/before_folder.png" width="200" />
 <p>
 
 ### After
 <p>
-    <img src="./images/after_folder.png" width="400" />
+    <img src="./images/after_folder.png" width="200" />
 <p>
 
 ✅ **2. 화면 전환 구조 개선**  
@@ -25,13 +25,13 @@
 ### Before
 <p>
     <img src="./images/before_navigationLink.png" width="400" />
-    <img src="./images/navigationLink_View.png" width="400" />
+    <img src="./images/navigationLink_View.png" width="200" />
 <p>
 
 ### After
 <p>
     <img src="./images/after_fullScreenCover.png" width="400" />
-    <img src="./images/fullScreenCover_View.png" width="400" />
+    <img src="./images/fullScreenCover_View.png" width="200" />
 <p>
 
 ✅ **3. ‘보내기’ 버튼 기능 추가**  
@@ -44,23 +44,23 @@
 ## 실행 화면 미리보기
 
 #### [1] 첫 화면
-<img src="./images/first.png" width="300" />
+<img src="./images/first.png" width="200" />
 
 #### [2] 송금 버튼 클릭
-<img src="./images/remittance.png" width="300" />
+<img src="./images/remittance.png" width="200" />
 
 #### [3] 보내기 버튼 클릭
-<img src="./images/send.png" width="300" />
+<img src="./images/send.png" width="200" />
 
 #### [4] WINGO통장 클릭
-<img src="./images/wingo.png" width="300" />
+<img src="./images/wingo.png" width="200" />
 
 #### [5] 금액 입력
 - 적정 금액 입력
-<img src="./images/enterMoneyCorrect.png" width="300" />
+    <img src="./images/enterMoneyCorrect.png" width="200" />
 
 - 초과 금액 입력
-<img src="./images/enterMoneyIncorrect.png" width="300" />
+    <img src="./images/enterMoneyIncorrect.png" width="200" />
 
 #### [4] 다음 클릭 -> 최종 확인 메시지
 <img src="./images/final.png" width="300" />
