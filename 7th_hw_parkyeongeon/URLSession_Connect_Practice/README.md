@@ -1,7 +1,4 @@
-# iOS 상품 관리 앱 (SwiftUI + MVVM + URLSession)
-
-SwiftUI와 URLSession을 활용하여 서버 상품 데이터를 조회·추가·필터링할 수 있는 앱입니다.  
-색상 선택 시 해당 색상의 상품만 표시되며, 재고 현황도 실시간으로 확인할 수 있습니다.
+# iOS 상품 관리 앱
 
 ---
 
@@ -14,7 +11,7 @@ SwiftUI와 URLSession을 활용하여 서버 상품 데이터를 조회·추가�
 
 전체 상품 리스트 + 색상 선택 메뉴가 있는 기본 홈 화면입니다.
 
-!<img src="./images/main.png" width="200" />
+<img src="./images/main.png" width="200" />
 
 ---
 
@@ -22,7 +19,7 @@ SwiftUI와 URLSession을 활용하여 서버 상품 데이터를 조회·추가�
 
 서버에서 받아온 색상 목록을 자동으로 표시합니다.
 
-!<img src="./images/colorList.png" width="200" />
+<img src="./images/colorList.png" width="200" />
 
 ---
 
